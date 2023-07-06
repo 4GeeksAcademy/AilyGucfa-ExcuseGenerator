@@ -49,9 +49,8 @@ function generateExcuse() {
   excuseElement.innerHTML = excuse;
 };*/
 
-window.onload = () => {
-  document.querySelector("#btn").addEventListener("click", () => {
+window.onload = function() {
+  document.querySelector("#btn").addEventListener("click", function() {
     document.querySelector("#excuse").innerHTML = generateExcuse();
   });
-  console.log("");
 };
